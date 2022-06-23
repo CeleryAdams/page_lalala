@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
-    padding: 0px 100px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    background-color: #1F2937;
+    padding: 10px 100px;
+}
+
+.logo {
+    color: #F9FAF8;
+    font-size: 24px;
 }
 
 ul {
@@ -14,14 +23,26 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 12px;
+    gap: 20px;
+}
+
+ul, .block1-subtext {
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .block1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 0px;
+    padding: 60px 100px;
+    background-color: #1F2937;
+}
+
+.block1-title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
 }
 
 .block1-left {
@@ -32,8 +53,8 @@ ul {
 }
 
 .block1-image {
-    width: 350px;
-    height: 200px;
+    width: 420px;
+    height: 220px;
     object-fit: cover;
     flex: 0 0 auto;
 }
@@ -47,6 +68,12 @@ ul {
     margin-bottom: 20px;
 }
 
+.block2-header {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
 .block2-information {
     display: flex;
     gap: 30px;
@@ -54,6 +81,8 @@ ul {
 
 .information img {
     max-width: 120px;
+    border: 2px solid #3882F6;
+    border-radius: 6px;
 }
 
 .information {
@@ -64,13 +93,12 @@ ul {
 .block3 {
     display: flex;
     flex-direction: column;
-    padding: 30px;
-    width: 550px;
-    align-self: center;
+    background-color: #E5E7EB;
+    padding: 30px 200px;
+    gap: 10px;
 }
 
 .quote {
-    width: 550px;
     align-self: center;
 }
 .attribution {
@@ -97,4 +125,12 @@ ul {
 .footer {
     text-align: center;
     padding: 10px;
+}
+
+button {
+    background: #3882F6;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 20px;
 }
